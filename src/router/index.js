@@ -6,15 +6,16 @@ import PostsPage from "../pages/PostsPage";
 import PostDetailsPage from "../pages/PostDetailsPage";
 import ProfilePage from "../pages/ProfilePage";
 
+
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes >
-          <Route exact path="/" component={LoginPage} />
-          <Route exact path="/postsPage" component={PostsPage} />
-          <Route exact path="/postDetailsPage" component={PostDetailsPage} />
-          <Route exact path="/profilePage" component={ProfilePage} />
+          <Route exact path="/" element={<LoginPage/>} />
+          <Route exact path="/postsPage" element={<PostsPage/>} />
+          <Route exact path="/postDetailsPage" element={<PostDetailsPage/>} />
+          <Route exact path="/profilePage" element={<ProfilePage/>} />
         </Routes >
       </div>
     </Router>
